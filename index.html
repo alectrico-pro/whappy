@@ -8,18 +8,18 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="apple-mobile-web-app-title" content="WHAPPY FreeMarket">
-    <meta name="application-name" content="WHAPPY FreeMarket">
+    <meta name="apple-mobile-web-app-title" content="FIFITO FreeMarket">
+    <meta name="application-name" content="FIFITO FreeMarket">
     <meta name="msapplication-TileColor" content="#0c0c0d">
     <meta name="theme-color" content="#ffffff">
 
 
     <meta content='es_CL' property='og:locale'>
     <meta content='website' property='og:type'>
-    <meta content='WHAPPY FreeMarket' property='og:title'>
+    <meta content='FIFITO FreeMarket' property='og:title'>
     <meta content='Encuentre todo lo que necesite en Instalaciones Eléctricas Domiciliarias ..., Tableros Armados Domiciliarios, Visita de Electricista a Domicilio. Atención por un Instalador Eléctrico Autorizado SEC. Entrega de productos y ejecución de trabajos en Providencia, Ñuñoa y Santiago Centro. Chile.' property='og:description'>
-    <meta content='https://whappy.alectrico.cl/' property='og:url'>
-    <meta content='WHAPPY FreeMarket' property='og:site_name'>
+    <meta content='https://fifito.alectrico.cl/' property='og:url'>
+    <meta content='FIFITO FreeMarket' property='og:site_name'>
 
 
 
@@ -55,9 +55,9 @@
     "@context" : "http://schema.org",
     "@type"    : "http://schema.org/Service",
     "name"     : "Electrodoméstico a Domicilio",
-    "image"    : "https://whappy.alectrico.cl/img/alectrico.png",
+    "image"    : "https://fifito.alectrico.cl/img/alectrico.png",
     "description" : "Electrodoméstico a Domicilio en La Habana. Visita Gratuita.",
-    "brand" : { "@type" : "Service", "name" : "WHAPPY FreeMarket"},
+    "brand" : { "@type" : "Service", "name" : "FIFITO FreeMarket"},
     "offers"   : {  "@type" : "Offer",
     "price" : "68000",
     "priceCurrency" : "CUP",
@@ -66,7 +66,7 @@
     "availability" : "http://schema.org/InStock",
     "seller" :{
     "@type" : "Organization",
-    "name" : "WHAPPY"} } ,
+    "name" : "FIFITO"} } ,
     "areaServed": {
     "@type"  : "Place",
     "address": {
@@ -120,7 +120,7 @@
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
 
-    <link rel="canonical" href="https://whappy.alectrico.cl/">
+    <link rel="canonical" href="https://fifito.alectrico.cl/">
     
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     
@@ -852,7 +852,7 @@
       </amp-img>
       <h1 id="abe-preview-header-title" 
         class="h3 center truncate caps">
-        WHAPPY
+        FIFITO
       </h1>
       <section amp-access="NOT loggedIn">
         <template amp-access-template type="amp-mustache">
@@ -892,7 +892,7 @@
 	  -->
 	</div>
         <h2 class="m1">Aremos Online</h2>
-	<h3 class="m1">Vendamos Mucho</h3>
+	<h3 class="m1">Seamos Comunidad!</h3>
 	<div class="m1">
 	  <amp-social-share type="twitter" width="30" height="22"></amp-social-share>
 	  <amp-social-share type="facebook" width="30" height="22" data-param-app_id="1777886622479021"></amp-social-share>
@@ -906,7 +906,7 @@
 
         <p id="product-description"
           class="m1">
-	  Compre electrodomésticos y se le dejamos a domicilio e instalados con las protecciones eléctricas necesarias.
+	  Participe comprando en nuestra comunidad, de esa forma creceremos para satisfacer más y mejor las necesidades de productos a domicilio. FIFITO FreeMarket no es una plataforma de ventas profesional, es solo un pequeño espacio para vender y comprar entre particulares.
        </p>
 
 <!--
@@ -1954,7 +1954,7 @@
 
 
 	      <p class="price-description"> Seleccionado:
-		<span [text]="product[product.selectedColor].nombres[product.selectedSlide]">Generador
+		<span [text]="product[product.selectedColor].nombres[product.selectedSlide]">Planta Eléctrica 4650W
 		</span>
                 <span [text] ="product[product.selectedColor].ids[
                    product.selectedColor == 'yellow' ? product.selectedSlideForYellow :
@@ -2411,7 +2411,8 @@
                 target= "_top"
                 on = "submit-success:carrusel-list.refresh,cart-list.refresh">
                  <div class="items-center flex" >
-                   <label for="color">Antes de Enviar la Solicitud debe Iniciar una Sesión con los datos del Comprador.</label>
+                   <label for="color">- ¿Ya Ingresó los Datos de Entrega?</label>
+                   <label for="color">- Refresque la pantalla para actualizarlos.</label>
                  </div>
 
 
@@ -2799,11 +2800,16 @@
             <div class="price">
                <strong>Precio</strong>
             </div>
+            <div class="moneda">
+               <strong>Moneda</strong>
+            </div>
+
           </div>
           {{#items}}
           <div class="item">
              <div class="name">{{nombre}}</div>
-	     <div class="price">{{precio}}{{moneda}}</div>
+	     <div class="price">{{precio}}</div>
+	     <div class="name">{{moneda}}</div>
           </div>
 
           {{/items}}
@@ -3231,7 +3237,7 @@
                    0 ]"> 13700
 -->
                    <!-- 6958 es el primer id de las maquetas del grupo del color green, debe verse en el backend o hacer un primer rodaje y tomar el número
-             desde whappy, para ello seleccionar green y mover para delante y atrás hasta que se muestr el id del pimero electrodompéstido, este número también debe estar en el input de carga_id-->
+             desde fifito, para ello seleccionar green y mover para delante y atrás hasta que se muestr el id del pimero electrodompéstido, este número también debe estar en el input de carga_id-->
 	     <!--
                 </span>
 		<span> W</span>
@@ -3248,22 +3254,67 @@
 	     -->
 	      
 
+  <section amp-access="loggedIn">
+    <div class = "max-width-4 mx-auto" >
+      <div class = "clearfix p2">
+
+        <h3 class = "m1">
+          Datos para el Vale de Mensajería.
+        </h3>
+        <p>
+          Ingrese o Actualice los datos necesarios para poder entregar los productos.
+	  Estos son los datos actuales.
+        </p>
 
 
-      <div class='stepper vertical' 
-        >
-	<h3 class = "m1">
-	  Por favor ingrese los datos del lugar de entrega y de la persona que recibirá el producto.
-	</h3>
-
-
+       <template amp-access-template type="amp-mustache">
+	 <div class="shopping-cart">
+          <div class="item header">
+            <div class="price">
+               <strong>Comprador y Datos Para Entrega</strong>
+            </div>
+          </div>
+          <hr/>
+          <div class="item">
+             <div class="name">El comprador es:</div>
+             <div class="price">{{comprador}}</div>
+          </div>
+	  <hr/>
+          <div class="item">
+             <div class="name">Fono del comprador</div>
+             <div class="price">{{fono}}</div>
+          </div>
+          <hr/>
+          <div class="item">
+             <div class="name">Email</div>
+             <div class="price">{{email}}</div>
+          </div>
+          <hr/>
+          <div class="item">
+             <div class="name">Dirección de Entrega</div>
+             <div class="price">{{direccion}}</div>
+          </div>
+          <hr/>
+          <div class="item">
+             <div class="name">Municipio</div>
+             <div class="price">{{municipio}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr/>
+    <hr/>
+   </template>
+ </section> <!-- loggeIn -->
+ 
+      <div class='stepper vertical'  >
 	<button [class]="currentStep > 0 ? 'step-title' : 'step-title step-active'" 
 	  class='step-title step-active' 
 	  on='tap:AMP.pushState({ currentStep: 0})'>
 	  <i [class]="contactoSelected ? 'step-complete' : 'step-incomplete'" 
 	    class='step-incomplete' 
 	    data-step-nr='1'></i>
-	    Contacto
+	    Datos de Entrega
 	  </button>
 	<section [hidden]='currentStep > 0'>
 	  <div class='content'>
@@ -3271,10 +3322,12 @@
 	      amp-access='loggedIn'
 	      role='button' 
 	      tabindex='0'>
+	   
 	      <button 
 		[hidden]='contactoSelected' 
 		class='ampstart-btn mx1 mt1 caps' 
 		on='tap:amp-access.login-sign-out'>Desbloquear
+
 	      </button>
 	      <hr>
 	      <p>Fifito FreeMarket guardará temporalmente sus datos de contacto.</p>
@@ -3289,41 +3342,62 @@
 	      </amp-selector>
 	    </span>
 
-	    <form [hidden]='contactoSelected' action-xhr='https://www.alectrico.cl/amp/accesos/create' amp-access='NOT loggedIn' class='' custom-validation-reporting='show-first-on-submit' method='post' on='submit-success:AMP.setState({contactoSelected: true})' target='_top' verify-xhr='https://www.alectrico.cl/amp/accesos/verify'>
+	    <form [hidden]='contactoSelected' action-xhr='https://www.alectrico.cl/amp/accesos/ingresaDatosDeContacto' amp-access='NOT loggedIn' class='' custom-validation-reporting='show-first-on-submit' method='post' on='submit-success:AMP.setState({contactoSelected: true})' target='_top' verify-xhr='https://www.alectrico.cl/amp/accesos/verify'>
 	      <input data-amp-replace='CLIENT_ID' name='amp_cliente_id' type='hidden' value='CLIENT_ID(uid)'>
 	      <p>Ingrese sus datos de contacto</p>
 	      <div class='px2 mt4 md-mt3'>
 		<div class='flex flex-wrap mxn2'>
-		  <div class='col-12 md-col-12 px2'>
+		  <div class='col-8 md-col-12 px2'>
 		    <div class='ampstart-input inline-block relative m0 p0 mb3'>
 		      <input class='block border-none p0 m0' id='verification-email' name='email' on='select:AMP.setState({ contactoSelected: true})' placeholder='email' required='' type='email'>
 		      <label aria-hidden='true' class='absolute top-0 right-0 bottom-0 left-0' for='email'>Email</label>
 		      <span validation-for='verification-email' visible-when-invalid='customError'>Email protegido con contraseña.
-			<button amp-access-hide='' amp-access='NOT loggedIn' class='ampstart-btn mx1 mt1 caps' on='tap:amp-access.login-sign-in' tabindex='0'>Usar</button>
+			<button amp-access-hide='' amp-access='NOT loggedIn' class='ampstart-btn mx1 mt1 caps' on='tap:amp-access.login-sign-in' tabindex='0'>Login con contraseña</button>
 		      </span>
 		      <span validation-for='verification-email' visible-when-invalid='valueMissing'></span>
 		      <span validation-for='verification-email' visible-when-invalid='typeMismatch'></span>
 		    </div>
 		  </div>
-		  <div class='col-12 md-col-12 px2'>
+		  <div class='col-8 md-col-12 px2'>
 		    <div class='ampstart-input inline-block relative m0 p0 mb3'>
 		      <input class='block border-none p0 m0' id='name' name='name' placeholder='Nombre' required type='text' value=''>
 		      <label aria-hidden='true' class='absolute top-0 right-0 bottom-0 left-0' for='name'>Nombre</label>
 		      <span validation-for='name' visible-when-invalid='valueMissing'></span>
 		    </div>
 		  </div>
-		  <div class='col-12 md-col-12 px2'>
-		    <div class='ampstart-input inline-block relative m0 p0 mb3'>
-			    <!--   <input class='block border-none p0 m0' id='verification-fono' name='fono' pattern='(\+56|56|)\W*(2|9)\W*[0-9]{8}' placeholder='Fono' required='' type='text' value=''> -->
-                    <input class='block border-none p0 m0' id='verification-fono' name='fono' pattern='((56|)\d{9}|(53)\d{8}|(2)\d{7})' placeholder='Fono' required='' type='text' value=''>
+
+                  <div class='col-8 md-col-12 px2'>
+                    <div class='ampstart-input inline-block relative m0 p0 mb3'>
+                            <!--   <input class='block border-none p0 m0' id='verification-fono' name='fono' pattern='(\+56|56|)\W*(2|9)\W*[0-9]{8}' placeholder='Fono' required='' type='text' value=''> -->
+                    <input class='block border-none p0 m0' id='verification-fono' name='fono' pattern='((56|)\d{9}|(53)\d{8}|(2)\d{7})' placeholder='Teléfono' required='' type='text' value=''>
 
 
-		      <label aria-hidden='true' class='absolute top-0 right-0 bottom-0 left-0' for='fono'>Fono</label>
-		      <span validation-for='verification-fono' visible-when-invalid='valueMissing'></span>
-		      <span validation-for='verification-fono' visible-when-invalid='typeMismatch'></span>
-		      <span validation-for='verification-fono' visible-when-invalid='patternMismatch'>Escriba un teléfono de Cuba: Ingrese el código 53 con ocho dígitos a continuación. Ejemplo: 5312345678</span>
-		    </div>
-		  </div>
+                      <label aria-hidden='true' class='absolute top-0 right-0 bottom-0 left-0' for='fono'>Fono</label>
+                      <span validation-for='verification-fono' visible-when-invalid='valueMissing'></span>
+                      <span validation-for='verification-fono' visible-when-invalid='typeMismatch'></span>
+                      <span validation-for='verification-fono' visible-when-invalid='patternMismatch'>Escriba un teléfono de Cuba: Ingrese el código 53 con ocho dígitos a continuación. Ejemplo: 5312345678</span>
+                    </div>
+                  </div>
+
+
+                  <div class='col-8 md-col-12 px2'>
+                    <div class='ampstart-input inline-block relative m0 p0 mb3'>
+                      <input class='block border-none p0 m0' id='direccion' name='direccion' on='select:AMP.setState({ direccionSelected: true})' placeholder='Dirección' required type='text' value=''>
+                      <label aria-hidden='true' class='absolute top-0 right-0 bottom-0 left-0' for='name'>Dirección</label>
+                      <span validation-for='direccion' visible-when-invalid='valueMissing'></span>
+                    </div>
+		    
+                    <div class='ampstart-input inline-block relative m0 p0 mb3'>
+		    <input class='block border-none p0 m0' id='comuna' name='comuna' on='select:AMP.setState({ direccionSelected: true})' placeholder='Municipio' required type='text'  pattern = "(Arroyo Naranjo|Boyeros|Centro Habana|Cerro|Cotorro|Diez de Octubre|Guanabacoa|La Habana del Este|La Habana Vieja|La Lisa|Marianao|Playa|Plaza de La Revolución|Regla|San Miguel del Padrón)" value=''> 
+
+                      <label aria-hidden='true' class='absolute top-0 right-0 bottom-0 left-0' for='comuna'>Municipio</label>
+                      <span validation-for='comuna' visible-when-invalid= 'valueMissing'></span>
+		      <span validation-for='comuna' visible-when-invalid= 'patternMismatch'>Por el momento solo atendemos a Municipios en La Habana (Arroyo naranjo|Boyeros|Centro habana|Cerro|Cotorro|Diez de octubre|Guanabacoa|La habana del este|La habana vieja|La lisa|Marianao|Playa|Plaza de la revolución|Regla|San miguel del padrón) </span>
+                  
+                    </div>
+                  </div>
+         
+
 		</div>
 	      </div>
 
@@ -3333,7 +3407,7 @@
 
 	      <div submit-success=''>
 		<template type='amp-mustache'>
-		Correcto!
+		Datos Aceptados!
 		</template>
 	      </div>
 
@@ -3358,316 +3432,46 @@
 	    </form>
 	    <button [disabled]='!contactoSelected' [hidden]='!contactoSelected' disabled hidden on='tap:AMP.pushState({currentStep: currentStep + 1})' type='submit'>continuar
 	    </button>
-	  </div>
-	</section>
+
+           <form method= "get"
+                action= "https://www.alectrico.cl/api/v1/electrico/productos/enviarSolicitud.json"
+                action-xhr= "https://www.alectrico.cl/api/v1/electrico/productos/enviarSolicitud.json"
+                target= "_top"
+                on = "submit-success:carrusel-list.refresh,cart-list.refresh">
+                 <div class="items-center flex" >
+                   <label for="color">- ¿Ya Ingresó los Datos de Entrega?</label>
+                   <label for="color">- Refresque la pantalla para actualizarlos.</label>
+                 </div>
 
 
-	<button [class]="currentStep != 1 ? 'step-title' : 'step-title step-active'" [disabled]='!contactoSelected' class='step-title' disabled='' on='tap:AMP.pushState({ currentStep: 1})'>
-	  <i [class]="problemaSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='2'></i> Comentarios
-	</button>
-	<!-- -->
-	<section [hidden]='currentStep !=1' hidden=''>
-	  <div class='content'>
-	    <form action-xhr='https://www.alectrico.cl/api/amp/presupuestos/create' class='' custom-validation-reporting='show-all-on-submit' method='post' on='submit-success:AMP.setState({problemaSelected: true})' target='_top' verify-xhr='https://www.alectrico.cl/api/amp/presupuestos/verify'>
-	      <input data-amp-replace='CLIENT_ID' name='amp_cliente_id' type='hidden' value='CLIENT_ID(uid)'>
-	      <input name='etapa' type='hidden' value='problema'>
-	      <div class='px2 mt4 md-mt3'>
-		<div class='flex flex-wrap mxn2'>
-
-		  <div class='col-12 md-col-12 px2'>
-		    <div class='ampstart-input inline-block relative m0 p0 mb3'>
-		      <textarea class='block border-none p0 m0' cols='40' id='descripcion' name='descripcion' on='tap:AMP.setState({ problemaSelected: true})' placeholder='Comente esta compra' required role='' rows='5' tabindex=''></textarea>
-		      <label aria-hidden='true' class='absolute top-0 right-0 bottom-0 left-0' for='descripcion'>Comentarios</label>
-		      <span validation-for='descripcion' visible-when-invalid='valueMissing'></span>
-		    </div>
-		  </div>
-
-		  <div class='col-12 md-col-12 px2'>
-		    <div class='flex flex-wrap mxn2'>
-		      <button value='' [disabled]='!problemaSelected' type='submit'>Guardar y Seguir
-		      </button>
-		    </div>
-		  </div>
-		</div>
-	      </div>
-	      <div submit-success=''>
-		<template type='amp-mustache'>
-		  Correcto!
-		</template>
-	      </div>
-	      <div submit-error=''>
-		<template type='amp-mustache'>
-		  {{#verifyErrors}}
-		  <p>{{name}} {{message}}</p>
-		  {{/verifyErrors}}
-		  {{^verifyErrors}}
-		  <p>Ocurrió un error de servidor. Intente nuevamente</p>
-		  {{/verifyErrors}}
-		</template>
-	      </div>
-	    </form>
-	  </div>
-	</section>
-	 
-	<button [class]="currentStep != 2 ? 'step-title' : 'step-title step-active'" [disabled]='!problemaSelected' class='step-active step-title' disabled='' on='tap:AMP.pushState({ currentStep: 2})'>
-	  <i [class]="tipo_trabajoSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='3'></i>
-	  Tipo de Trabajo
-	</button>
-	<!-- -->
-	<section [hidden]='currentStep != 2' hidden=''>
-	  <div class='content'>
-	    <form action-xhr='https://www.alectrico.cl/api/amp/presupuestos/create' class='' custom-validation-reporting='show-first-on-submit' id='tipo_trabajo' method='post' on='submit-success:AMP.setState({tipo_trabajoSelected: true})' target='_top' verify-xhr='https://www.alectrico.cl/api/amp/accesos/verify'>
-	      <input data-amp-replace='CLIENT_ID' name='amp_cliente_id' type='hidden' value='CLIENT_ID(uid)'>
-	      <input name='etapa' type='hidden' value='tipo_trabajo'>
-	      <div class='ampstart-input inline-block relative m0 p0 mb3'>
-		<p>¿Qué tipo de trabajos necesita?</p>
-		<amp-selector [selected]='atencion.selectedServicio' class='poll' name='tipo_trabajo-poll' on='select:AMP.setState({ atencion: {selectedServicio: event.targetOption}}),tipo_trabajo.submit'>
-		  <div option='ampliación'>Ampliación</div>
-		  <div option='reparación'>Reparación</div>
-		  <div option='normalización'>Normalización</div>
-		  <div option='certificación'>Certificación</div>
-		  <div option='instalación'>Instalación de lámparas y/o Enchufes</div>
-		</amp-selector>
-	      </div>
-	      <div submit-success=''>
-		<template type='amp-mustache'>
-		Correcto!
-		</template>
-	      </div>
-	      <div submit-error=''>
-		<template type='amp-mustache'>
-		  {{#verifyErrors}}
-		  <p>{{name}} {{message}}</p>
-		  {{/verifyErrors}}
-		  {{^verifyErrors}}
-		  <p>Ocurrió un error de servidor. Intente nuevamente</p>
-		  {{/verifyErrors}}
-		</template>
-	      </div>
-	    </form>
-	  </div>
-	</section>
-	<!-- -->
-	<button [class]="currentStep != 3 ? 'step-title' : 'step-title step-active'" [disabled]='!tipo_trabajoSelected' class='step-title' disabled='' on='tap:AMP.pushState({ currentStep: 3})'>
-	  <i [class]="direccionSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='4'></i>Dirección
-	</button>
-	<!-- -->
-	<section [hidden]='currentStep !=3' hidden=''>
-	  <div class='content'>
-	    <form action-xhr='https://www.alectrico.cl/api/amp/presupuestos/create' class='' custom-validation-reporting='show-all-on-submit' method='post' on='submit-success:AMP.setState({direccionSelected: true})' target='_top' verify-xhr='https://www.alectrico.cl/api/amp/presupuestos/verify'>
-	      <input data-amp-replace='CLIENT_ID' name='amp_cliente_id' type='hidden' value='CLIENT_ID(uid)'>
-	      <input name='etapa' type='hidden' value='direccion'>
-	      <div class='px2 mt4 md-mt3'>
-		<div class='flex flex-wrap mxn2'>
-		  <div class='col-12 md-col-12 px2'>
-		    <div class='ampstart-input inline-block relative m0 p0 mb3'>
-		      <input class='block border-none p0 m0' id='direccion' name='direccion' on='select:AMP.setState({ direccionSelected: true})' placeholder='Dirección' required type='text' value=''>
-		      <label aria-hidden='true' class='absolute top-0 right-0 bottom-0 left-0' for='name'>Dirección</label>
-		      <span validation-for='direccion' visible-when-invalid='valueMissing'></span>
-		    </div>
-		    <!-- Start Input -->
-		    <div class='ampstart-input inline-block relative m0 p0 mb3'>
-		      <input class='block border-none p0 m0' id='comuna' name='comuna' on='select:AMP.setState({ direccionSelected: true})' placeholder='Municipio' required type='text' pattern = "(Arroyo naranjo|Boyeros|Centro habana|Cerro|Cotorro|Diez de octubre|Guanabacoa|La habana del este|La habana vieja|La lisa|Marianao|Playa|Plaza de la revolución|Regla|San miguel del padrón)" value=''>
-		      <label aria-hidden='true' class='absolute top-0 right-0 bottom-0 left-0' for='comuna'>Municipio</label>
-		      <span validation-for='comuna' visible-when-invalid= 'valueMissing'></span>
-                      <span validation-for='comuna' visible-when-invalid= 'patternMismatch'>Por el momento solo atendemos a Municipios en La Habana (Arroyo naranjo|Boyeros|Centro habana|Cerro|Cotorro|Diez de octubre|Guanabacoa|La habana del este|La habana vieja|La lisa|Marianao|Playa|Plaza de la revolución|Regla|San miguel del padrón) </span>
-
-		    </div>
-		  </div>
-		  <div class='col-12 md-col-12 px2'>
-		    <div class='flex flex-wrap mxn2'>
-		      <button type='submit'>
-		      Registrar
-		      </button>
-		    </div>
-		  </div>
-		</div>
-	      </div>
-	      <div submit-success=''>
-		<template type='amp-mustache'>
-		Correcto!
-		</template>
-	      </div>
-	      <div submit-error=''>
-		<template type='amp-mustache'>
-		  {{#verifyErrors}}
-		  <p>{{name}} {{message}}</p>
-		  {{/verifyErrors}}
-		  {{^verifyErrors}}
-		  <p>Ocurrió un error de servidor. Intente nuevamente</p>
-		  {{/verifyErrors}}
-		</template>
-	      </div>
-	    </form>
-	  </div>
-	</section>
-	<!--- -->
-	<form action-xhr='https://www.alectrico.cl/api/amp/presupuestos/create' class='' custom-validation-reporting='show-all-on-submit' id='data' method='post' on='submit-success:AMP.setState({problemaSelected: true})' target='_top' verify-xhr='https://www.alectrico.cl/amp/presupuestos/verify'>
-	  <input data-amp-replace='CLIENT_ID' name='amp_cliente_id' type='hidden' value='CLIENT_ID(uid)'>
-	  <input name='etapa' type='hidden' value='visita'>
-	</form>
-	<button [class]="currentStep != 4 ? 'step-title' : 'step-title step-active'" [disabled]='!direccionSelected' class='step-title step-active' disabled='' on='tap:AMP.pushState({ currentStep: 4})'>
-	  <i [class]="semanaSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='5'></i>Día de la semana
-	</button>
-	<!-- -->
-	<section [hidden]='currentStep !=4' hidden=''>
-	  <div class='content'>
-	    <p>¿Qué día de la semana le resulta más conveniente para una visita eléctrica?</p>
-	    <amp-selector class='poll' name='semana-poll' on='select:AMP.setState({semanaSelected: true}),data.submit'>
-	      <div option='lunes'>lunes</div>
-	      <div option='martes'>martes</div>
-	      <div option='miércoles'>miércoles</div>
-	      <div option='jueves'>jueves</div>
-	      <div option='viernes'>viernes</div>
-	      <div option='sábado'>sábado</div>
-	      <div option='domingo'>domingo</div>
-	    </amp-selector>
-	  </div>
-	</section>
-	<!-- -->
-	<button [class]="currentStep !=5 ? 'step-title' : 'step-title step-active'" [disabled]='!semanaSelected' class='step-title' disabled='' on='tap:AMP.pushState({ currentStep: 5})'>
-	  <i [class]="horaSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='6'></i>Hora del día
-	</button>
-	<!-- -->
-	<section [hidden]='currentStep != 5' hidden=''>
-	  <div class='content'>
-	    <p>¿Qué horario del día le resulta más conveniente para una visita eléctrica?</p>
-	    <amp-selector class='poll' name='hora-poll' on='select:AMP.setState({horaSelected: true}),data.submit'>
-	      <div option='mañana'>En la mañana</div>
-	      <div option='tarde'>En la tarde</div>
-	    </amp-selector>
-	  </div>
-	</section>
-
-	<!-- -->
-	<button value='' class='step-title' [class]="currentStep != 6 ? 'step-title' : 'step-title step-active'" [disabled]='!horaSelected' [hidden]="atencion.selectedServicio != 'certificación'" class='step-title' disabled='' on='tap:AMP.pushState({ currentStep: 6})'>
-	  <i [class]="destinoSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='7'></i>
-	  Destino de la Propiedad
-	</button>
-	<!-- -->
-	<section [hidden]='currentStep != 6' hidden=''>
-	  <div class='content'>
-	    <p></p>
-	    <amp-selector class='poll' name='destino-poll' on='select:AMP.setState({ destinoSelected: true}),data.submit'>
-	      <div option='vivienda'>La propiedad está destinada a ser usada como vivienda</div>
-	      <div option='local'>La propiedad está destinada a ser usada como local comercial</div>
-	    </amp-selector>
-	  </div>
-	</section>
-	<!-- -->
-	<button value='' [class]="currentStep != 7 ? 'step-title' : 'step-title step-active'" [disabled]='!destinoSelected' [hidden]="atencion.selectedServicio != 'certificación'" class='step-title' disabled='' on='tap:AMP.pushState({ currentStep: 7})'>
-	  <i [class]="reunionSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='8'></i>Lugar de Reunión de Personas
-	</button>
-	<!-- -->
-	<section [hidden]='currentStep != 7' hidden=''>
-	  <div class='content'>
-	    <p>¿En la propiedad se observa la permanencia de 25 personas por más de 15 minutos?</p>
-	    <amp-selector class='poll' name='reunion-poll' on='select:AMP.setState({ reunionSelected: true}),data.submit'>
-	      <div option='reunión_sí'>Sí</div>
-	      <div option='reunión_no'>No</div>
-	    </amp-selector>
-	  </div>
-	</section>
-	<!--- -->
-	<button [class]="currentStep != 8 ?  'step-title' : 'step-title step-active'" [disabled]='!reunionSelected' [hidden]="atencion.selectedServicio != 'certificación'" class='step-title' disabled='' on='tap:AMP.pushState({ currentStep: 8})'>
-	  <i [class]="croquisSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='9'></i>Planos Eléctricos
-	</button>
-	<!--- -->
-	<section [hidden]='currentStep != 8' hidden=''>
-	  <div class='content'>
-	    <p>¿Posee los planos de la Instalación Eléctrica?</p>
-	    <amp-selector class='poll' name='croquis-poll' on='select:AMP.setState({ croquisSelected: true}),data.submit'>
-	      <div option='croquis_sí'>Sí</div>
-	      <div option='croquis_no'>No</div>
-	    </amp-selector>
-	  </div>
-	</section>
-	<!-- -->
-	<button [class]="currentStep != 9 ?  'step-title' : 'step-title step-active'" [disabled]='!croquisSelected' [hidden]="atencion.selectedServicio != 'certificación'" class='step-title' disabled='' on='tap:AMP.pushState({ currentStep: 9})'>
-	  <i [class]="titularidadSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='10'></i>Titularidad
-	</button>
-	<!-- -->
-	<section [hidden]='currentStep != 9' hidden=''>
-	  <div class='content'>
-	    <p>¿Ud. es el actual dueño o dueña de la propiedad?</p>
-	    <amp-selector class='poll' name='titularidad-poll' on='select:AMP.setState({ titularidadSelected: true}),data.submit'>
-	      <div option='titularidad_sí'>Sí</div>
-	      <div option='titularidad_no'>No</div>
-	    </amp-selector>
-	  </div>
-	</section>
-	<!-- -->
-	<button [class]="currentStep != 10 ?  'step-title' : 'step-title step-active'" [disabled]='!titularidadSelected' [hidden]="atencion.selectedServicio != 'certificación'" class='step-title' disabled='' on='tap:AMP.pushState({ currentStep: 10})'>
-	  <i [class]="rolSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='11'></i>ROL y RUT
-	</button>
-	<!-- -->
-	<section [hidden]='currentStep != 10' hidden=''>
-	  <div class='content'>
-	    <form action-xhr='https://www.alectrico.cl/amp/presupuestos/create' class='' custom-validation-reporting='show-all-on-submit' method='post' on='submit-success:AMP.setState({rolSelected: true})' target='_top' verify-xhr='https://www.alectrico.cl/amp/presupuestos/verify'>
-	      <input data-amp-replace='CLIENT_ID' name='amp_cliente_id' type='hidden' value='CLIENT_ID(uid)'>
-	      <input name='etapa' type='hidden' value='rol'>
-	      <div class='px2 mt4 md-mt3'>
-	      <div class='flex flex-wrap mxn2'>
-	      <div class='col-12 md-col-12 px2'>
-	      <div class='ampstart-input inline-block relative m0 p0 mb3'>
-	      <input class='block border-none p0 m0' id='rol' name='rol' pattern='(\d{1}|\d{2}|\d{3}|\d{4}|\d{5})-(\d{1}|\d{2}|\d{3}|\d{4}|\d{5})' placeholder='ROL' required type='text' value=''>
-	      <label aria-hidden='true' class='absolute top-0 right-0 bottom-0 left-0' for='rol'>ROL</label>
-	      <span validation-for='rol' visible-when-invalid='valueMissing'></span>
-	      <span validation-for='rol' visible-when-invalid='patternMismatch'>Ingrese el ROL con un guión intermedio: xxxxx-xxxxx</span>
-	      </div>
-	      <!-- Start Input -->
-	      <div class='ampstart-input inline-block relative m0 p0 mb3'>
-		<input class='block border-none p0 m0' id='rut' name='rut' pattern='(\d{1}|\d{2})\.\d{3}\.\d{3}-(k|\d{1})' placeholder='RUT' required type='text' value=''>
-		<label aria-hidden='true' class='absolute top-0 right-0 bottom-0 left-0' for='rut'>RUT</label>
-		<span validation-for='rut' visible-when-invalid='valueMissing'></span>
-		<span validation-for='rut' visible-when-invalid='patternMismatch'>Ingrese el RUT con puntos y guión: xx.xxx.xxx-v</span>
-		</div>
-		  </div>
-		    <div class='col-12 md-col-12 px2'>
-		      <div class='flex flex-wrap mxn2'>
-			<button [disabled]='rolSelected' type='submit'>
-			Registrar
-			</button>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-		<div submit-success=''>
-		  <template type='amp-mustache'>
-		  Correcto!
-		  </template>
-		</div>
-		<div submit-error=''>
-		<template type='amp-mustache'>
-		  {{#verifyErrors}}
-		  <p>{{name}} {{message}}</p>
-		  {{/verifyErrors}}
-		  {{^verifyErrors}}
-		  <p>Ocurrió un error de servidor. Intente nuevamente</p>
-		  {{/verifyErrors}}
-		</template>
-	      </div>
-	    </form>
-            <!---
-	    <button [disabled]='!rolSelected' [hidden]='!rolSelected' disabled hidden on='tap:AMP.pushState({currentStep: currentStep + 1})' type='submit'>
-	    continuar
-	    </button>
-            -->
-	    </div>
-	</section>
-        <!-- -->
-        <button [class]="currentStep != 11 ?  'step-title' : 'step-title step-active'" hidden [disabled]='!rolSelected' [hidden]="atencion.selectedServicio != 'certificación'" class='step-title' disabled='' on='tap:AMP.pushState({ currentStep: 11})'>
-          <i [class]="rolSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='.'></i>Fin del Pedido
-        </button>
-        <!-- -->
-
-        <!-- -->
-        <button [class]="currentStep != 11 ?  'step-title' : 'step-title step-active'" hidden [disabled]='!horaSelected' [hidden]="atencion.selectedServicio == 'certificación'" class='step-title' disabled='' on='tap:AMP.pushState({ currentStep: 11})'>
-          <i [class]="horaSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='.'></i>Fin del Pedido
-        </button>
-        <!-- -->
+               <fieldset>
+                  <input name = "amp_cliente_id"
+                     type = "hidden"
+                     value = "CLIENT_ID(uid)"
+                    data-amp-replace = "CLIENT_ID">
+                  <div class="items-center flex my1 ml1" >
+                        <input type="submit"
+                         class="ampstart-btn caps"
+                         name="  Enviar Solicitud  "
+                         value="  Enviar Solicitud  ">
+               </fieldset>
+               <div submitting>
+                 Envíando los datos ... Gracias por Esperar.
+               </div>
+               <div submit-success>
+                 Su solicitud fue recibida!
+              </div>
+              <div submit-error>
+               Ocurrió un error y la solicitud no pudo ser aceptada.
+              </div>
+            </form>
+            <hr/>
 
 
+
+
+	  </div>
+	</section>
       </div>
       <!--googleon: all-->
 
@@ -3684,7 +3488,7 @@
       </div>
       -->
 
-      <div class="my2">
+      <div class="my2" hidden>
         <!--
         <button 
           hidden
@@ -3724,7 +3528,7 @@
       -->
 
 
-      <div class="my2">
+      <div class="my2" hidden>
         <button amp-access="NOT loggedIn" 
           on="tap:amp-access.login-sign-in, carrusel-list.refresh"
           class="ampstart-btn ampstart-btn-secondary ml1 caps">Inicie sesión
