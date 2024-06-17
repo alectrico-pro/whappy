@@ -2838,21 +2838,16 @@
         <div class="shopping-cart">
           <div class="item header">
             <div class="name">
-               <strong>Nombre</strong>
+               <strong>Productos</strong>
             </div>
-            <div class="price">
-               <strong>Precio</strong>
-            </div>
-            <div class="moneda">
-               <strong>Moneda</strong>
-            </div>
-
           </div>
           {{#items}}
           <div class="item">
              <div class="name">{{nombre}}</div>
 	     <div class="price">{{precio}}</div>
 	     <div class="name">{{moneda}}</div>
+	     <div class="price">{{minimo}}X</div>
+	     <div class="price">{{precio_lote}}</div>
           </div>
 
           {{/items}}
