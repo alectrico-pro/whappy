@@ -1021,6 +1021,28 @@
                     </amp-img>
                   </li>
 
+                  <li>
+                    <amp-img on="tap:AMP.setState({product: {selectedSlideForYellow: 4, selectedSlide: 4}})"
+                     src="https://bucket-86r0ey.s3.us-east-1.amazonaws.com/IMG-20240613-WA0007.jpg"
+                      width="60"
+                      height="40"
+                      class=""
+                      [class]="product.selectedSlideForYellow == 4 ? 'selected fadeIn' : '' "
+                      tabindex="0"
+                      role="button">
+                    </amp-img>
+                  </li>
+                  <li>
+                    <amp-img on="tap:AMP.setState({product: {selectedSlideForYellow: 5, selectedSlide: 5}})"
+                     src="https://bucket-86r0ey.s3.us-east-1.amazonaws.com/IMG-20240613-WA0005.jpg"
+                      width="60"
+                      height="40"
+                      class=""
+                      [class]="product.selectedSlideForYellow == 5 ? 'selected fadeIn' : '' "
+                      tabindex="0"
+                      role="button">
+                    </amp-img>
+                  </li>
 
 
                 </ul>
@@ -1436,6 +1458,27 @@
                     role="button"
                     tabindex="0">
                   </amp-img>
+
+                  <amp-img src="https://bucket-86r0ey.s3.us-east-1.amazonaws.com/IMG-20240613-WA0007.jpg"
+                    width="1024"
+                    height="682"
+                    layout="responsive"
+                    on="tap:gallery-lightbox"
+                    role="button"
+                    tabindex="0">
+                  </amp-img>
+
+
+                  <amp-img src="https://bucket-86r0ey.s3.us-east-1.amazonaws.com/IMG-20240613-WA0005.jpg"
+                    width="1024"
+                    height="682"
+                    layout="responsive"
+                    on="tap:gallery-lightbox"
+                    role="button"
+                    tabindex="0">
+                  </amp-img>
+
+
 
 
 
