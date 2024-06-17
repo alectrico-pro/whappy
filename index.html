@@ -3315,7 +3315,7 @@
 	    class='step-incomplete' 
 	    data-step-nr='1'></i>
 	    Datos de Entrega
-	  </button>
+        </button>
 	<section [hidden]='currentStep > 0'>
 	  <div class='content'>
 	    <span amp-access-hide='' 
@@ -3397,6 +3397,15 @@
                     </div>
                   </div>
          
+
+		  <button [class]="currentStep > 0 ? 'step-title' : 'step-title step-active'" 
+		    class='step-title step-active' 
+		     on='tap:AMP.pushState({ currentStep: 1})'>
+		    <i [class]="contactoSelected ? 'step-complete' : 'step-incomplete'" 
+		      class='step-incomplete' 
+		      data-step-nr='2'></i>
+		      Datos de Bancarios (solo convenio Whappy)
+		  </button>
 
                   <div class='col-8 md-col-12 px2'>
                     <div class='ampstart-input inline-block relative m0 p0 mb3'>
