@@ -2387,13 +2387,18 @@
 	      href="#">
             </a>
 -->
-	      <amp-img width="100"
+	      <amp-img width="200"
 		tabindex = 0
 		height="90"
 		layout="fixed"
 		aria-describedby = "caption"
 		alt="{{cantidad}}"
 		srcset="{{img}}">
+                    <div>
+                      <small>
+                      {{comision}}{{moneda_comision}}
+                     </small>
+                    </div>
 
 		<form method   = "POST"
 		   class = "close-gallery-button"
@@ -2409,11 +2414,6 @@
                 <a class="ampstart-btn caps m2 close-gallery-button" >
 		{{cantidad}}
 		</a>
-                    <div>
-                      <small>
-                      {{comision}}{{moneda_comision}}
-                     </small>
-                    </div>
 	
               </amp-img>
 <!--                    on = "submit-success:carrusel-list.refresh,cart-list.refresh,ocupacion-list.refresh">
