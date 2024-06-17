@@ -3396,6 +3396,9 @@
                       <span validation-for='direccion' visible-when-invalid='valueMissing'></span>
                     </div>
 		    
+                 </div>
+                 <div class='col-8 md-col-12 px2'>
+
                     <div class='ampstart-input inline-block relative m0 p0 mb3'>
 		    <input class='block border-none p0 m0' id='comuna' name='comuna' on='select:AMP.setState({ direccionSelected: true})' placeholder='Municipio' required type='text'  pattern = "(Arroyo Naranjo|Boyeros|Centro Habana|Cerro|Cotorro|Diez de Octubre|Guanabacoa|La Habana del Este|La Habana Vieja|La Lisa|Marianao|Playa|Plaza de La Revolución|Regla|San Miguel del Padrón)" value=''> 
 
@@ -3407,7 +3410,7 @@
                   </div>
          
 
-		  <button [class]="currentStep > 0 ? 'step-title' : 'step-title step-active'" 
+		  <button [class]="currentStep > 1 ? 'step-title' : 'step-title step-active'" 
 		    class='step-title step-active' 
 		     on='tap:AMP.pushState({ currentStep: 1})'>
 		    <i [class]="nombre_bancoSelected ? 'step-complete' : 'step-incomplete'" 
