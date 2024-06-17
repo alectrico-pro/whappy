@@ -3347,6 +3347,9 @@
 	      <p>Ingrese sus datos de contacto</p>
 	      <div class='px2 mt4 md-mt3'>
 		<div class='flex flex-wrap mxn2'>
+ <div class='stepper vertical'  >
+
+
                   <button [class]="currentStep > 0 ? 'step-title' : 'step-title step-active'"
                     class='step-title step-active'
                      on='tap:AMP.pushState({ currentStep: 0})'>
@@ -3355,7 +3358,7 @@
                       data-step-nr='1'></i>
                       Datos de Entrega
 		  </button>
-
+ </div>
 		  <div class='col-8 md-col-12 px2'>
 		    <div class='ampstart-input inline-block relative m0 p0 mb3'>
 		      <input class='block border-none p0 m0' id='verification-email' name='email' on='select:AMP.setState({ contactoSelected: true})' placeholder='email' required='' type='email'>
@@ -3412,38 +3415,38 @@
 
 		  <button [class]="currentStep > 1 ? 'step-title' : 'step-title step-active'" 
 		    class='step-title step-active' 
-		     on='tap:AMP.pushState({ currentStep: 0})'>
+		     on='tap:AMP.pushState({ currentStep: 1})'>
 		    <i [class]="nombre_bancoSelected ? 'step-complete' : 'step-incomplete'" 
 		      class='step-incomplete' 
 		      data-step-nr='2'></i>
-		      Datos de Bancarios (solo convenio Whappy)
+		      Datos de Bancarios Opcional
 		  </button>
 
                   <div class='col-8 md-col-12 px2'>
                     <div class='ampstart-input inline-block relative m0 p0 mb3'>
 
                       <input class='block border-none p0 m0' id='nombre_banco' name='nombre_banco' on='select:AMP.setState({ nombre_bancoSelected: true})' placeholder='Nombre de su Banco' required type='text' value=''>
-                      <label aria-hidden='true' class='absolute top-0 right-0 bottom-0 left-0' for='nombre_banco'>Nombre del Banco</label>
+                      <label aria-hidden='true' class='absolute top-0 right-0 bottom-0 left-0' for='nombre_banco'>Nombre</label>
                       <span validation-for='nombre_banco' visible-when-invalid='valueMissing'></span>
                     </div>
                   </div>
-                  <div class='col-8 md-col-12 px2'>
 
-                    <div class='ampstart-input inline-block relative m0 p0 mb3'>
-                      <input class='block border-none p0 m0' id='titular_banco' name='titular_banco' on='select:AMP.setState({ titular_bancoSelected: true})' placeholder='Nombre del Titular tal como está en el banco' required type='text' value=''>
-                      <label aria-hidden='true' class='absolute top-0 right-0 bottom-0 left-0' for='titular_banco'>Titular de la Cuenta en el Banco</label>
-                      <span validation-for='titular_banco' visible-when-invalid='valueMissing'></span>
-                    </div>
-                  </div>
                   <div class='col-8 md-col-12 px2'>
                     <div class='ampstart-input inline-block relative m0 p0 mb3'>
                       <input class='block border-none p0 m0' id='cuenta_banco' name='cuenta_banco' on='select:AMP.setState({ cuenta_bancoSelected: true})' placeholder='Número de la Cuenta en el Banco' required type='text' value=''>
                       <label aria-hidden='true' class='absolute top-0 right-0 bottom-0 left-0' for='cuenta_banco'>Cuenta</label>
                       <span validation-for='cuenta_banco' visible-when-invalid='valueMissing'></span>
                     </div>
+                  </div>
 
+                  <div class='col-8 md-col-12 px2'>
+                    <div class='ampstart-input inline-block relative m0 p0 mb3'>
+                      <input class='block border-none p0 m0' id='titular_banco' name='titular_banco' on='select:AMP.setState({ titular_bancoSelected: true})' placeholder='Nombre del Titular tal como está en el banco' required type='text' value=''>
+                      <label aria-hidden='true' class='absolute top-0 right-0 bottom-0 left-0' for='titular_banco'>Titular</label>
+                      <span validation-for='titular_banco' visible-when-invalid='valueMissing'></span>
+                    </div>
+                  </div>
 
-		  </div>
 		</div>
 	      </div>
 
