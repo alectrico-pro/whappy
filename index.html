@@ -2844,7 +2844,7 @@
           {{#items}}
           <div class="item">
              <div class="name">{{nombre}}</div>
-	     <div class="price">{{precio_unitario}}</div>
+	     <div class="price">{{precio}}</div>
 	     <div class="name">{{moneda}}</div>
 	     <div class="price">{{unidades}}</div>
 	     <div class="price">{{precio}}</div>
@@ -3485,7 +3485,7 @@
 	    </button>
 
 
-          <form [hidden]='bancarioSelected' action-xhr='https://www.alectrico.cl/amp/accesos/ingresaDatosBancarios' amp-access='NOT loggedIn' class='' custom-validation-reporting='show-first-on-submit' method='post' on='submit-success:AMP.setState({bancarioSelected: true})' target='_top' verify-xhr='https://www.alectrico.cl/amp/accesos/verify'>
+          <form [hidden]='bancarioSelected' action-xhr='https://www.alectrico.cl/amp/accesos/ingresaDatosBancarios' amp-access='NOT loggedIn' class='' custom-validation-reporting='show-first-on-submit' method='post' on='submit-success:AMP.setState({bancarioSelected: true})' target='_top' verify-xhr='https://www.alectrico.cl/amp/accesos/verify_bancarios'>
               <input data-amp-replace='CLIENT_ID' name='amp_cliente_id' type='hidden' value='CLIENT_ID(uid)'>
               <p>Opcionalmente puede ingresar sus datos bancarios</p>
               <div class='px2 mt4 md-mt3'>
@@ -3493,7 +3493,7 @@
                   <div class='col-8 md-col-12 px2'>
                     <div class='ampstart-input inline-block relative m0 p0 mb3'>
 
-                      <input class='block border-none p0 m0' id='nombre_banco' name='nombre_banco' on='select:AMP.setState({ nombre_bancoSelected: true})' placeholder='Nombre' required type='text' value=''>
+                      <input class='block border-none p0 m0' id='nombre_banco' name='nombre_banco' on='select:AMP.setState({ nombre_bancoSelected: true})' placeholder='Nombre Banco' required type='text' value=''>
                       <label aria-hidden='true' class='absolute top-0 right-0 bottom-0 left-0' for='nombre_banco'>Nombre</label>
                       <span validation-for='nombre_banco' visible-when-invalid='valueMissing'></span>
                     </div>
