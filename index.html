@@ -2407,7 +2407,7 @@
 		       <button  type = "submit" >X</button>
 		</form>
                 <a class="ampstart-btn caps m2 close-gallery-button" >
-                   {{cantidad}}X
+                   {{cantidad}}
                 </a>
               </amp-img>
 <!--                    on = "submit-success:carrusel-list.refresh,cart-list.refresh,ocupacion-list.refresh">
@@ -2847,10 +2847,7 @@
           {{#items}}
           <div class="item">
              <div class="name">{{nombre}}</div>
-	     <div class="price">{{precio}}</div>
-	     <div class="price">{{moneda}}</div>
-	     <div class="price">X{{cantidad}}</div>
-	     <div class="price">{{precio}}</div>
+	     <div class="price">{{precio}} {{moneda}} X{{cantidad}} {{subtotal}} </div>
           </div>
 
           {{/items}}
