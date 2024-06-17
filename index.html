@@ -2381,25 +2381,25 @@
 
             {{#items}}
 
+                    <div   >
+                      <small>
+                      {{comision}}{{moneda_comision}}
+                     </small>
+                    </div>
+
 
 <!--
 	    <a class="text-decoration-none p1"
 	      href="#">
             </a>
 -->
-	      <amp-img width="200"
+	      <amp-img width="100"
 		tabindex = 0
 		height="90"
 		layout="fixed"
 		aria-describedby = "caption"
 		alt="{{cantidad}}"
 		srcset="{{img}}">
-                    <div>
-                      <small>
-                      {{comision}}{{moneda_comision}}
-                     </small>
-                    </div>
-
 		<form method   = "POST"
 		   class = "close-gallery-button"
 		    action-xhr = "https://www.alectrico.cl/api/v1/electrico/productos/{{id}}/dropFromCircuito.json"
