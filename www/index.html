@@ -3510,7 +3510,7 @@
 	    </button>
 
 
-          <form [hidden]='bancarioSelected' action-xhr='https://www.alectrico.cl/amp/accesos/ingresaDatosBancarios' amp-access='NOT loggedIn' class='' custom-validation-reporting='show-first-on-submit' method='post' on='submit-success:AMP.setState({bancarioSelected: true})' target='_top' verify-xhr='https://www.alectrico.cl/amp/accesos/verifyBancarios'>
+          <form hidden [hidden]='bancarioSelected' action-xhr='https://www.alectrico.cl/amp/accesos/ingresaDatosBancarios' amp-access='NOT loggedIn' class='' custom-validation-reporting='show-first-on-submit' method='post' on='submit-success:AMP.setState({bancarioSelected: true})' target='_top' verify-xhr='https://www.alectrico.cl/amp/accesos/verifyBancarios'>
               <input data-amp-replace='CLIENT_ID' name='amp_cliente_id' type='hidden' value='CLIENT_ID(uid)'>
               <p>Datos Bancarios (para comisionistas)</p>
               <div class='px2 mt4 md-mt3'>
