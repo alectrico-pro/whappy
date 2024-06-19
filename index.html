@@ -994,13 +994,6 @@
                       tabindex="0"
                       role="button">
                      </amp-img>
-		      <amp-img 
-		        alt="Planta Eléctrica"
-                        fallback
-                        width="550"
-                        height="368"
-                        src="/img/IMG-20240613-WA0012.jpg">
-		      </amp-img>
                   </li>
 
                   <li>
@@ -1436,7 +1429,7 @@
                 <amp-carousel id="yellow-apple-carousel"
                   width="1024"
                   height="682"
-                  layout="responsive"
+                  layout="container"
                   type="slides"
                   [slide]="product.selectedSlideForYellow"
                   on="slideChange: AMP.setState({product: {selectedSlide: event.index, selectedSlideForYellow: event.index}})"
@@ -1454,7 +1447,6 @@
                     src="/img/IMG-20240613-WA0012.jpg"
                     width="1024"
                     height="1024"
-                    layout="fixed-height"
                     on="tap:gallery-lightbox"
                     role="button"
                     tabindex="0">
