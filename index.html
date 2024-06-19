@@ -985,14 +985,22 @@
 
                   <li>
                     <amp-img on="tap:AMP.setState({product: {selectedSlideForYellow: 0, selectedSlide: 0}})"
-                     [src]="https://bucket-86r0ey.s3.us-east-1.amazonaws.com/IMG-20240613-WA0012.jpg"
-                     src="/img/IMG-20240613-WA0012.jpg"
+		      alt="Planta Eléctrica"
+                      src="https://bucket-86r0ey.s3.us-east-1.amazonaws.com/IMG-20240613-WA0012.jpg"
                       width="60"
                       height="40"
                       class=""
                       [class]="product.selectedSlideForYellow == 0 ? 'selected fadeIn' : '' "
                       tabindex="0"
                       role="button">
+                     </amp-img>
+		      <amp-img 
+		        alt="Planta Eléctrica"
+                        fallback
+                        width="550"
+                        height="368"
+                        src="/img/IMG-20240613-WA0012.jpg">
+		      </amp-img>
                     </amp-img>
                   </li>
 
