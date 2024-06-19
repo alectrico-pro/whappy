@@ -968,13 +968,14 @@
 <button on="tap:AMP.setState({imageUrl: images.imageUrl_2})">800   W</button>
 <button on="tap:AMP.setState({imageUrl: images.imageUrl_3})">120  0W</button>
 
+<!--  [src]="imageUrl ? imageUrl : images.imageUrl_1"> -->
 
 <amp-img id="amp-img"
   src="http://via.placeholder.com/350x350"
   layout="responsive"
   width="350"
   height="350"
-  [src]="imageUrl ? imageUrl : images.imageUrl_1">
+  [src]="imageUrl">
 </amp-img>
 
               <div class="product-gallery">
