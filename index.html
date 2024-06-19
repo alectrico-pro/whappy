@@ -1036,7 +1036,7 @@
                   <li>
                     <amp-img on="tap:AMP.setState({product: {selectedSlideForYellow: 4, selectedSlide: 4}})"
                     [src]="https://bucket-86r0ey.s3.us-east-1.amazonaws.com/IMG-20240616-WA0007.jpg"
-                     src="/img/IMG-20240613-WA0007.jpg"
+                     src="/img/IMG-20240616-WA0007.jpg"
                       width="60"
                       height="40"
                       class=""
@@ -1048,7 +1048,7 @@
                   <li>
                     <amp-img on="tap:AMP.setState({product: {selectedSlideForYellow: 5, selectedSlide: 5}})"
                      [src]="https://bucket-86r0ey.s3.us-east-1.amazonaws.com/IMG-20240616-WA0005.jpg"
-	             src="/img/IMG-20240613-WA0005.jpg"
+	             src="/img/IMG-20240616-WA0005.jpg"
                       width="60"
                       height="40"
                       class=""
@@ -1436,7 +1436,8 @@
                   class="fadeIn"
                   [hidden]="product.selectedColor != 'yellow'">
 
-                  <amp-img src="https://bucket-86r0ey.s3.us-east-1.amazonaws.com/IMG-20240613-WA0012.jpg"
+                  <amp-img [src]="https://bucket-86r0ey.s3.us-east-1.amazonaws.com/IMG-20240613-WA0012.jpg"
+                    src="/img/IMG-20240613-WA0012.jpg"
                     width="1024"
                     height="682"
                     layout="responsive"
@@ -1445,7 +1446,8 @@
                     tabindex="0">
                   </amp-img>
 
-                  <amp-img src="https://bucket-86r0ey.s3.us-east-1.amazonaws.com/IMG-20240613-WA0007.jpg"
+                  <amp-img [src]="https://bucket-86r0ey.s3.us-east-1.amazonaws.com/IMG-20240613-WA0007.jpg"
+                    src="/img/IMG-20240613-WA0007.jpg"
                     width="1024"
                     height="682"
                     layout="responsive"
@@ -1454,26 +1456,8 @@
                     tabindex="0">
                   </amp-img>
 
-                  <amp-img src="https://bucket-86r0ey.s3.us-east-1.amazonaws.com/IMG-20240613-WA0001.jpg"
-                    width="1024"
-                    height="682"
-                    layout="responsive"
-                    on="tap:gallery-lightbox"
-                    role="button"
-                    tabindex="0">
-                  </amp-img>
-
-
-                  <amp-img src="https://bucket-86r0ey.s3.us-east-1.amazonaws.com/IMG-20240613-WA0011.jpg"
-                    width="1024"
-                    height="682"
-                    layout="responsive"
-                    on="tap:gallery-lightbox"
-                    role="button"
-                    tabindex="0">
-                  </amp-img>
-
-                  <amp-img src="https://bucket-86r0ey.s3.us-east-1.amazonaws.com/IMG-20240616-WA0007.jpg"
+                  <amp-img [src]="https://bucket-86r0ey.s3.us-east-1.amazonaws.com/IMG-20240613-WA0001.jpg"
+                    src="/img/IMG-20240613-WA0001.jpg"
                     width="1024"
                     height="682"
                     layout="responsive"
@@ -1483,7 +1467,29 @@
                   </amp-img>
 
 
-                  <amp-img src="https://bucket-86r0ey.s3.us-east-1.amazonaws.com/IMG-20240616-WA0005.jpg"
+                  <amp-img [src]="https://bucket-86r0ey.s3.us-east-1.amazonaws.com/IMG-20240613-WA0011.jpg"
+                    src="/img/IMG-20240613-WA0011.jpg"
+                    width="1024"
+                    height="682"
+                    layout="responsive"
+                    on="tap:gallery-lightbox"
+                    role="button"
+                    tabindex="0">
+                  </amp-img>
+
+                  <amp-img [src]="https://bucket-86r0ey.s3.us-east-1.amazonaws.com/IMG-20240616-WA0007.jpg"
+		    src="/img/IMG-20240616-WA0007.jpg"
+                    width="1024"
+                    height="682"
+                    layout="responsive"
+                    on="tap:gallery-lightbox"
+                    role="button"
+                    tabindex="0">
+                  </amp-img>
+
+
+                  <amp-img [src]="https://bucket-86r0ey.s3.us-east-1.amazonaws.com/IMG-20240616-WA0005.jpg"
+	            src="/img/IMG-20240616-WA0005.jpg"
                     width="1024"
                     height="682"
                     layout="responsive"
