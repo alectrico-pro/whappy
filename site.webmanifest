@@ -1,6 +1,6 @@
 {
-    "name": "Fifito FreeMarket",
-    "short_name": "FIFITO",
+    "name": "Whappy Store",
+    "short_name": "Whappy",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -16,5 +16,5 @@
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "display": "standalone",
-    "start_url": "https://designer.alectrico.cl/index.html/?launcher=true"
+    "start_url": "https://whappy.store/index.html/?launcher=true"
 }
