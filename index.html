@@ -23,28 +23,6 @@
 
 
 
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '{your-app-id}',
-      cookie     : true,
-      xfbml      : true,
-      version    : '{api-version}'
-    });
-
-    FB.AppEvents.logPageView();
-
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-
 
     <script id="inicial" type='application/ld+json'>
     { 
@@ -142,6 +120,7 @@
     <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-facebook-like" src="https://cdn.ampproject.org/v0/amp-facebook-like-0.1.js"></script>
 
     <link rel="canonical" href="https://whappy.store/">
     
@@ -830,6 +809,14 @@
   </head>
 
   <body>
+
+
+<amp-facebook-like width="110"
+  height="20"
+  layout="fixed"
+  data-layout="button_count"
+  data-href="https://www.facebook.com/testesmegadivertidos/">
+</amp-facebook-like>
     <!--
     <amp-state
        id = "remoto"
