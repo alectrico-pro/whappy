@@ -1,0 +1,65 @@
+#genera la imagen de un gato
+CLOUDFLARE_ACCOUNT_ID=cc28cf159fc984d8f45fd0f4864a8a28
+CLOUDFLARE_API_TOKEN=WlpTWSOyn02QAbmE4fXIT6gCt4JmnFrWYMrkf-9W
+
+#curl -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \
+#     -H "Authorization: Bearer WlpTWSOyn02QAbmE4fXIT6gCt4JmnFrWYMrkf-9W" \
+#     -H "Content-Type:application/json"
+
+#curl -X POST "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/run/@cf/bytedance/stable-diffusion-xl-lightning" \
+#  -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"  \
+#  -d '{ "prompt": "oregano from chillan chile" }' \
+#  --output "saborius_oregano_20kg.jpg"
+
+
+#curl -X POST "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/run/@cf/bytedance/stable-diffusion-xl-lightning" \
+#  -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"  \
+#  -d '{ "prompt": "aji verde from chile" }' \
+#  --output "saborius_aji_picante_chillan_30kg.jpg"
+
+
+#curl -X POST "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/run/@cf/bytedance/stable-diffusion-xl-lightning" \
+#  -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"  \
+#  -d '{ "prompt": "chilean garlic" }' \
+#  --output "saborius_ajo_chillan_30kg.jpg"
+
+
+#curl -X POST "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/run/@cf/bytedance/stable-diffusion-xl-lightning" \
+#  -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"  \
+#  -d '{ "prompt": "chilean cumin" }' \
+#  --output "saborius_comino_chillan_30kg.jpg"
+
+
+
+#curl -X POST "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/run/@cf/bytedance/stable-diffusion-xl-lightning" \
+#  -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"  \
+#  -d '{ "prompt": "onion from south chile" }' \
+#  --output "saborius_cebolla_chillan_20kg.jpg"
+
+
+
+#curl -X POST "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/run/@cf/bytedance/stable-diffusion-xl-lightning" \
+#  -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"  \
+#  -d '{ "prompt": "green pepper from chillan chile" }' \
+#  --output "saborius_pimenton_chillan_333g.jpg"
+
+
+#curl -X POST "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/run/@cf/bytedance/stable-diffusion-xl-lightning" \
+#  -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"  \
+#  -d '{ "prompt": "paprika" }' \
+#  --output "saborius_pimiento_molido_20kg.jpg"
+
+
+#curl -X POST "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/run/@cf/bytedance/stable-diffusion-xl-lightning" \
+#  -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"  \
+#  -d '{ "prompt": "pepper from Chile" }' \
+#  --output "saborius_pimientos_20kg.jpg"
+
+
+#curl -X POST "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/run/@cf/bytedance/stable-diffusion-xl-lightning" \
+#  -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"  \
+#  -d '{ "prompt": "laurel plant spicy" }' \
+#  --output "saborius_laurel_20kg.jpg"
+
+
+
