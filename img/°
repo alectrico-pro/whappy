@@ -1,0 +1,32 @@
+#genera la imagen de un gato
+CLOUDFLARE_ACCOUNT_ID=cc28cf159fc984d8f45fd0f4864a8a28
+CLOUDFLARE_API_TOKEN=WlpTWSOyn02QAbmE4fXIT6gCt4JmnFrWYMrkf-9W
+
+#curl -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \
+#     -H "Authorization: Bearer WlpTWSOyn02QAbmE4fXIT6gCt4JmnFrWYMrkf-9W" \
+#     -H "Content-Type:application/json"
+curl -X POST "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/run/@cf/bytedance/stable-diffusion-xl-lightning" \
+  -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"  \
+  -d '{ "prompt": "chilli oregano" }' \
+  --output "saborius_oregano_chillan_25kg.jpg"
+
+
+curl -X POST "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/run/@cf/bytedance/stable-diffusion-xl-lightning" \
+  -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"  \
+  -d '{ "prompt": "chilli pepper" }' \
+  --output "saborius_aji_picante_chillan_30kg.jpg"
+
+
+curl -X POST "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/run/@cf/bytedance/stable-diffusion-xl-lightning" \
+  -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"  \
+  -d '{ "prompt": "chilli garlic" }' \
+  --output "saborius_ajo_chillan_20kg.jpg"
+
+
+curl -X POST "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/run/@cf/bytedance/stable-diffusion-xl-lightning" \
+  -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"  \
+  -d '{ "prompt": "chilli cumin" }' \
+  --output "saborius_comino_chillan_20kg.jpg"
+
+
+
