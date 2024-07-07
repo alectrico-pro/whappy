@@ -953,8 +953,8 @@
 <amp-state id="images">
   <script type="application/json">
     {
-      "imageUrl_1": "/img/saborius/oregano_chillan_saco_20kg.png",
-      "imageUrl_2": "/img/saborius_oregano_chillan_25kg.png",
+      "imageUrl_1": "/img/saborius/saborius_oregano_chillan_25kg.png",
+      "imageUrl_2": "/img/saborius/saborius_aji_picante_chillan_30kg.png",
       "imageUrl_3": "/img/IMG-20240613-WA0011.jpg",
       "imageUrl_4": "/img/IMG-20240616-WA0007.jpg"
     }
@@ -1003,8 +1003,8 @@
                   <li>
                     <amp-img on="tap:AMP.setState({product: {selectedSlideForYellow: 1, selectedSlide: 1}})"
                       alt="Aji Picante 30kg"
-                      [src]="https://bucket-86r0ey.s3.us-east-1.amazonaws.com/saborius_aji_picante_30kg.png"
-                      src="/img/saborius_aji_picante_30kg.png"
+                      src="img/saborius/saborius_platos.png"
+                      [src]="images.imageUrl_2"
                       width="60"
                       height="40"
                       class=""
@@ -1487,8 +1487,9 @@
                       Llamar
                     </a>
 
-                    <amp-img [src]="https://bucket-86r0ey.s3.us-east-1.amazonaws.com/saborius_aji_picante_30kg.png"
-                      src="/img/saborius_aji_picante_30kg.png"
+                    <amp-img
+                      src="/img/soborius_platos.png"
+		      [src]="images.imageUrl_2"
                       width="500"
                       height="500"
                       layout="responsive"
