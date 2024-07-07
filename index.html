@@ -961,8 +961,7 @@
       "imageUrl_5": "/img/saborius/saborius_laurel_20kg.png",
       "imageUrl_6": "/img/saborius/saborius_pimientos_20kg.png",
       "imageUrl_7": "/img/saborius/saborius_ajo_chillan_20kg.png",
-      "imageUrl_8": "/img/saborius/saborius_princesa_paprika.png",
-      "imageUrl_9": "/img/saborius/saborius_ajo_chillan_20kg.png"
+      "imageUrl_8": "/img/saborius/princesa_paprika.png"
     }
   </script>
 </amp-state>
@@ -1125,20 +1124,6 @@
                       height="40"
                       class=""
                       [class]="product.selectedSlideForYellow == 8 ? 'selected fadeIn' : '' "
-                      tabindex="0"
-                      role="button">
-                     </amp-img>
-                  </li>
-
-                  <li>
-                    <amp-img on="tap:AMP.setState({product: {selectedSlideForYellow: 9, selectedSlide: 9}})"
-                      alt="Aji Picante 30kg"
-                      src="img/saborius/saborius_platos.png"
-                      [src]="images.imageUrl_9"
-                      width="60"
-                      height="40"
-                      class=""
-                      [class]="product.selectedSlideForYellow == 9 ? 'selected fadeIn' : '' "
                       tabindex="0"
                       role="button">
                      </amp-img>
@@ -1774,35 +1759,13 @@
                     tabindex="0">
 
                     <a class="ampstart-btn caps m2 close-gallery-button"
-                      href = "tel:+5350475562">
-                      Llamar
-                    </a>
-                    <amp-img
-                      src="/img/saborius_platos.png"
-                      [src]="images.imageUrl_8"
-                      width="500"
-                      height="500"
-                      layout="responsive"
-                      on="tap:gallery-lightbox"
-                      role="button"
-                      tabindex="0">
-                    </amp-img>
-
-
-                 </div>
-
-                 <div 
-                    role="button"
-                    tabindex="0">
-
-                    <a class="ampstart-btn caps m2 close-gallery-button"
                       href = "tel:+5350475562"
                       [href] = "proveedor.fono">
                       Llamar
                     </a>
                     <amp-img
                       src="/img/saborius_platos.png"
-                      [src]="images.imageUrl_9"
+                      [src]="images.imageUrl_8"
                       width="500"
                       height="500"
                       layout="responsive"
