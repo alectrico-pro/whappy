@@ -961,7 +961,9 @@
       "imageUrl_5": "/img/saborius/saborius_laurel_20kg.png",
       "imageUrl_6": "/img/saborius/saborius_pimientos_20kg.png",
       "imageUrl_7": "/img/saborius/saborius_ajo_chillan_20kg.png",
-      "imageUrl_8": "/img/saborius/princesa_paprika.png"
+      "imageUrl_8": "/img/saborius/princesa_paprika.png",
+      "imageUrl_9": "/img/saborius/tacos.png"
+
     }
   </script>
 </amp-state>
@@ -1582,7 +1584,7 @@
                     tabindex="0">
 
                     <a class="ampstart-btn caps m2 close-gallery-button"
-		      [href] = 'tel: "proveedor.fono"'
+		      [href] = "tel: 'proveedor.fono'"
                       href = "tel:+5350475562">
                       Llamar
                     </a>
@@ -1767,6 +1769,28 @@
                     <amp-img
                       src="/img/saborius_platos.png"
                       [src]="images.imageUrl_8"
+                      width="500"
+                      height="500"
+                      layout="responsive"
+                      on="tap:gallery-lightbox"
+                      role="button"
+                      tabindex="0">
+                    </amp-img>
+
+                  </div>
+
+                 <div 
+                    role="button"
+                    tabindex="0">
+
+                    <a class="ampstart-btn caps m2 close-gallery-button"
+                      href = "tel:+5350475562"
+                      [href] = "tel: {proveedor.fono}">
+                      Llamar
+                    </a>
+                    <amp-img
+                      src="/img/saborius_platos.png"
+                      [src]="images.imageUrl_9"
                       width="500"
                       height="500"
                       layout="responsive"
