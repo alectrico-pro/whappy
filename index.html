@@ -950,18 +950,17 @@
 	  </div>
 	</amp-lightbox>
 -->
-<!--
 <amp-state id="images">
   <script type="application/json">
     {
-      "imageUrl_1": "/img/IMG-20240613-WA0012.jpg",
+      "imageUrl_1": "/img/saborius/oregano_chillan_saco_20kg.png",
       "imageUrl_2": "/img/IMG-20240613-WA0001.jpg",
       "imageUrl_3": "/img/IMG-20240613-WA0011.jpg",
       "imageUrl_4": "/img/IMG-20240616-WA0007.jpg"
     }
   </script>
 </amp-state>
-
+<!--
 <button on="tap:AMP.setState({imageUrl: images.imageUrl_1})">4650 W</button>
 <button on="tap:AMP.setState({imageUrl: images.imageUrl_2})">2000 W</button>
 <button on="tap:AMP.setState({imageUrl: images.imageUrl_3})">1200 W</button>
@@ -991,6 +990,7 @@
 		      alt="Orégano Chilán 25 kG"
                       [src]="https://bucket-86r0ey.s3.us-east-1.amazonaws.com/saborius_oregano_chillan_28kg.png"
                       src="/img/saborius_oregano_chillan_25kg.png"
+		      [src]="images.imageUrl_1"
                       width="60"
                       height="40"
                       class=""
