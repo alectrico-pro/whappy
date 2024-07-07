@@ -960,10 +960,24 @@
       "imageUrl_4": "/img/saborius/saborius_pimenton_chillan_20kg.png",
       "imageUrl_5": "/img/saborius/saborius_laurel_20kg.png",
       "imageUrl_6": "/img/saborius/saborius_pimientos_20kg.png",
-      "imageUrl_7": "/img/saborius/saborius_ajo_chillan_20kg.png"
+      "imageUrl_7": "/img/saborius/saborius_ajo_chillan_20kg.png",
+      "imageUrl_8": "/img/saborius/saborius_princesa_paprika.png",
+      "imageUrl_9": "/img/saborius/saborius_ajo_chillan_20kg.png"
     }
   </script>
 </amp-state>
+
+
+<amp-state id="proveedor">
+  <script type="application/json">
+    {
+      "fono": "+56932000849"
+    }
+  </script>
+</amp-state>
+
+
+
 <!--
 <button on="tap:AMP.setState({imageUrl: images.imageUrl_1})">4650 W</button>
 <button on="tap:AMP.setState({imageUrl: images.imageUrl_2})">2000 W</button>
@@ -1101,6 +1115,35 @@
                       role="button">
                      </amp-img>
                   </li>
+
+                  <li>
+                    <amp-img on="tap:AMP.setState({product: {selectedSlideForYellow: 8, selectedSlide: 8}})"
+                      alt="Aji Picante 30kg"
+                      src="img/saborius/saborius_platos.png"
+                      [src]="images.imageUrl_8"
+                      width="60"
+                      height="40"
+                      class=""
+                      [class]="product.selectedSlideForYellow == 8 ? 'selected fadeIn' : '' "
+                      tabindex="0"
+                      role="button">
+                     </amp-img>
+                  </li>
+
+                  <li>
+                    <amp-img on="tap:AMP.setState({product: {selectedSlideForYellow: 9, selectedSlide: 9}})"
+                      alt="Aji Picante 30kg"
+                      src="img/saborius/saborius_platos.png"
+                      [src]="images.imageUrl_9"
+                      width="60"
+                      height="40"
+                      class=""
+                      [class]="product.selectedSlideForYellow == 9 ? 'selected fadeIn' : '' "
+                      tabindex="0"
+                      role="button">
+                     </amp-img>
+                  </li>
+
 
 
 
@@ -1753,7 +1796,8 @@
                     tabindex="0">
 
                     <a class="ampstart-btn caps m2 close-gallery-button"
-                      href = "tel:+5350475562">
+                      href = "tel:+5350475562"
+                      [href] = "proveedor.fono">
                       Llamar
                     </a>
                     <amp-img
