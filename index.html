@@ -837,6 +837,7 @@
 
     <div id="abe-preview-header" 
       class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4">
+   <!--  
       <a href=".." class="caps text-decoration-none">
         <i class="align-middle inline-block mr1">
           <svg fill="#000000" 
@@ -847,7 +848,7 @@
 	  </svg>
         </i>
      </a>
-
+   -->
      <!--
       <amp-img srcset="/img/logo_flash.png" 
 	width="424" 
@@ -972,7 +973,7 @@
 <amp-state id="proveedor">
   <script type="application/json">
     {
-      "fono": "+56932000849"
+      "fono": "+56977669348"
     }
   </script>
 </amp-state>
@@ -1585,7 +1586,7 @@
 
                     <a class="ampstart-btn caps m2 close-gallery-button"
                       [href] = "'tel:' + proveedor.fono"
-                      href = "tel:+5350475562">
+                      href = "">
                       Llamar
                     </a>
 
@@ -1608,7 +1609,8 @@
 		    tabindex="0">
 
                     <a class="ampstart-btn caps m2 close-gallery-button"
-                      href = "tel:+5350475562">
+                      [href] = "'tel:' + proveedor.fono" 
+                      href = "">
                       Llamar
                     </a>
 
@@ -1630,7 +1632,8 @@
                     tabindex="0">
 
                     <a class="ampstart-btn caps m2 close-gallery-button"
-                      href = "tel:+5350475562">
+                      [href] = "'tel:' + proveedor.fono"
+                      href = "">
                       Llamar
                     </a>
 
@@ -1653,7 +1656,8 @@
                     tabindex="0">
 
                     <a class="ampstart-btn caps m2 close-gallery-button"
-                      href = "tel:+5350475562">
+	              [href] = "'tel:' + proveedor.fono"
+                      href = "">
                       Llamar
                     </a>
                     <amp-img
@@ -1673,7 +1677,8 @@
                     tabindex="0">
 
                     <a class="ampstart-btn caps m2 close-gallery-button"
-                      href = "tel:+5350475562">
+	              [href] = "'tel:' + proveedor.fono"
+                      href = "">
                       Llamar
                     </a>
                     <amp-img
@@ -1694,7 +1699,8 @@
                     tabindex="0">
 
                     <a class="ampstart-btn caps m2 close-gallery-button"
-                      href = "tel:+5350475562">
+	              [href] = "'tel:' + proveedor.fono"
+                      href = "">
                       Llamar
                     </a>
 
@@ -1717,7 +1723,8 @@
                     tabindex="0">
 
                     <a class="ampstart-btn caps m2 close-gallery-button"
-                      href = "tel:+5350475562">
+	              [href] = "'tel:' + proveedor.fono"
+                      href = "">
                       Llamar
                     </a>
 
@@ -1740,7 +1747,8 @@
                     tabindex="0">
 
                     <a class="ampstart-btn caps m2 close-gallery-button"
-                      href = "tel:+5350475562">
+	              [href] = "'tel:' + proveedor.fono"
+                      href = "">
                       Llamar
                     </a>
 
@@ -1762,8 +1770,8 @@
                     tabindex="0">
 
                     <a class="ampstart-btn caps m2 close-gallery-button"
-                      href = "tel:+5350475562"
-                      [href] = "tel: {proveedor.fono}">
+	              [href] = "'tel:' + proveedor.fono"
+		       href = "">
                       Llamar
                     </a>
                     <amp-img
