@@ -1585,8 +1585,18 @@
                     role="button"
                     tabindex="0">
 
+                   <a class="ampstart-btn caps m2 close-gallery-button"
+                      href = "">
+                      Llamar
+                    </a>
+
+                   <p class="price-description"> Precio:
+                     <span [text]="producto.precio_0">
+                     </span>
+                    </p>
                     <a class="ampstart-btn caps m2 close-gallery-button"
                       [href] = "'tel:' + proveedor.fono"
+		      [text]="producto.precio_0"
                       href = "">
                       Llamar
                     </a>
